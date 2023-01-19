@@ -11,17 +11,17 @@
    To static link also add:
        #define ISL_LIANG_BARSKY_STATIC
 
-	 By default all calculations is done in floats (isllb_float type), to use doubles do:
+   By default all calculations is done in floats (isllb_float type), to use doubles do:
        #define ISL_LIANG_BARSKY_DOUBLE
 
    LINKS:
-	     Liang, Y. D., and Barsky, B. A New Concept and Method for Line Clipping // ACM Transactions on Graphics, 3(1):1–22, January 1984.
+       Liang, Y. D., and Barsky, B. A New Concept and Method for Line Clipping // ACM Transactions on Graphics, 3(1):1–22, January 1984.
        Liang, Y. D., B. A., Barsky, and M. Slater. Some Improvements to a Parametric Line Clipping Algorithm // CSD-92-688, Computer Science Division, University of California, Berkeley, 1992.
 
    USAGE:
-      //                                    clipping rectangle    line segment
-      //                                   xmin ymin xmax ymax   x1  y1  x2   y2
-      struct isllb_result res = isllb_clip(100, 100, 500, 500,  50, 50, 650, 650);
+       //                                    clipping rectangle    line segment
+       //                                   xmin ymin xmax ymax   x1  y1  x2   y2
+       struct isllb_result res = isllb_clip(100, 100, 500, 500,  50, 50, 650, 650);
 			// res.inside -- 0 if line segment is outside of the clipping rectangle, 1 otherwise
 			// res.xn1, res.yn1, res.xn2, res.yn2 -- clipped line segment
 
@@ -30,7 +30,7 @@
    git: git@github.com:iskolbin/isl_liang_barsky
 
    LICENSE:
-     See end of file for license information.
+       See end of file for license information.
 */
 
 #ifndef ISLLB_DEF
